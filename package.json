@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass --watch style/sass/main.scss style/style.css"
+    "sass": "sass --watch style/sass/main.scss style/style.css",
+    "push": "git push https://github.com/Emmanuel97423/OhMyFood_03_26_11_2020.git"
   },
   "repository": {
     "type": "git",
