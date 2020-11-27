@@ -3,19 +3,38 @@
 @import './base/typography';
 
 body {
-	width: 375px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+	
+	display: grid;
+	grid-template-columns: 375px;
+	grid-template-rows: auto;
 	text-align: center;
+	background-color:#eaeaea;
 
 }
 .header {
 	
 	&__logo {
 		width: 100%;
-		padding:10px 5px 5px 5px;
+		padding:10px 10px 10px 10px;
 		background-color: $white;
-		box-shadow: 0 0 20px -10px  $dark;
+		box-shadow: 0 0 20px -10px  $dark;		
 	}
+	&__location {
+		display: flex;
+		justify-content: center;
+		margin:20px;
+		background-color:#eaeaea;
+		align-items: center;
+		text-align: center;		
+		&--icon{	
+			margin-right:1em;
+			color: $dark-grey;
+		}
+		&--text{
+			color:$dark-grey;
+			font-weight: bolder;
+		}
+	}
+	
+
 }

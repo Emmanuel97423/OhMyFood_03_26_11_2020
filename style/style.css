@@ -18,18 +18,34 @@ body h1, h2, p {
 }
 
 body {
-  width: 375px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 375px;
+  grid-template-rows: auto;
   text-align: center;
+  background-color: #eaeaea;
 }
 
 .header__logo {
   width: 100%;
-  padding: 10px 5px 5px 5px;
+  padding: 10px 10px 10px 10px;
   background-color: #FFFFFF;
   box-shadow: 0 0 20px -10px #000000;
+}
+.header__location {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  background-color: #eaeaea;
+  align-items: center;
+  text-align: center;
+}
+.header__location--icon {
+  margin-right: 1em;
+  color: #494848;
+}
+.header__location--text {
+  color: #494848;
+  font-weight: bolder;
 }
 
 /*# sourceMappingURL=style.css.map */
