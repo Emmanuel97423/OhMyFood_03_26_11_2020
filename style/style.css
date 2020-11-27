@@ -17,8 +17,19 @@ body h1, h2, p {
   font-family: "Roboto", sans-serif;
 }
 
-.header {
-  background-color: red;
+body {
+  width: 375px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.header__logo {
+  width: 100%;
+  padding: 10px 5px 5px 5px;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 20px -10px #000000;
 }
 
 /*# sourceMappingURL=style.css.map */

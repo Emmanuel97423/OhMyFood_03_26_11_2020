@@ -2,6 +2,20 @@
 @import './utils/variables';
 @import './base/typography';
 
+body {
+	width: 375px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	text-align: center;
+
+}
 .header {
-	background-color: red;
+	
+	&__logo {
+		width: 100%;
+		padding:10px 5px 5px 5px;
+		background-color: $white;
+		box-shadow: 0 0 20px -10px  $dark;
+	}
 }
