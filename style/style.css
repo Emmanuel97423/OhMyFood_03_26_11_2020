@@ -30,6 +30,7 @@ body h1 {
   background-color: #eaeaea;
 }
 
+/*HEADER*/
 .header__logo {
   width: 100%;
   padding: 20px 10px 10px 10px;
@@ -38,11 +39,12 @@ body h1 {
 }
 .header__location {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   margin: 20px;
-  background-color: #eaeaea;
   align-items: center;
   text-align: center;
+  background-color: #eaeaea;
 }
 .header__location--icon {
   margin-right: 1em;
@@ -53,9 +55,6 @@ body h1 {
   font-weight: bolder;
 }
 .header__calltoaction1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   padding: 20px;
   background-color: #f6f6f6;
 }
@@ -70,6 +69,27 @@ body h1 {
   background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
   box-shadow: 5px 5px 20px -15px;
   color: white;
+}
+
+/*FONCTIONNEMENT*/
+.fonction {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  background-color: white;
+}
+.fonction--title {
+  margin: 20px 50px 20px -80px;
+}
+.fonction__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20px;
+  display: flex;
+}
+.fonction__container--text {
+  color: #FF79DA;
 }
 
 .restaurant__container--img img {

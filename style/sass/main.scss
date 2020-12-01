@@ -1,6 +1,7 @@
 @import './base/reset';
 @import './utils/variables';
 @import './base/typography';
+@import './utils/mixins';
 
 
 body h1 {
@@ -17,6 +18,8 @@ body h1 {
 	
 	
 }
+/*HEADER*/
+
 .header {
 	
 	&__logo {
@@ -26,12 +29,10 @@ body h1 {
 		box-shadow: 0 0 20px -10px  $dark;		
 	}
 	&__location {
-		display: flex;
-		justify-content: center;
-		margin:20px;
-		background-color:#eaeaea;
+		@include flex (flex, row, center, 20px);
 		align-items: center;
-		text-align: center;		
+		text-align: center;	
+		background-color:#eaeaea;	
 		&--icon{	
 			margin-right:1em;
 			color: $dark-grey;
@@ -42,9 +43,6 @@ body h1 {
 		}		
 	}
 	&__calltoaction1{
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
 		padding:20px;
 		background-color:#f6f6f6;
 		&>p, h1 {
@@ -64,7 +62,24 @@ body h1 {
 		
 	}
 	
+}
+/*FONCTIONNEMENT*/
 
+.fonction {
+	width: 100%;
+	height: auto;
+	padding: 20px;
+	background-color: white;
+	&--title {
+		margin: 20px 50px 20px -80px;
+	}
+	&__container {
+		@include flex(flex, row, space-between, 20px);
+		display: flex;
+		&--text {
+			color:$color-secondary;
+		}
+		}
 }
 .restaurant {
 	&__container {
