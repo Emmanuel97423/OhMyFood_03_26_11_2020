@@ -17,17 +17,22 @@ body h1, h2, p {
   font-family: "Roboto", sans-serif;
 }
 
-body {
+body h1 {
+  font-size: 27px;
+}
+
+.bloc-page {
   display: grid;
   grid-template-columns: 375px;
   grid-template-rows: auto;
   text-align: center;
+  align-items: center;
   background-color: #eaeaea;
 }
 
 .header__logo {
   width: 100%;
-  padding: 10px 10px 10px 10px;
+  padding: 20px 10px 10px 10px;
   background-color: #FFFFFF;
   box-shadow: 0 0 20px -10px #000000;
 }
@@ -46,6 +51,30 @@ body {
 .header__location--text {
   color: #494848;
   font-weight: bolder;
+}
+.header__calltoaction1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f6f6f6;
+}
+.header__calltoaction1 > p, .header__calltoaction1 h1 {
+  margin-bottom: 20px;
+}
+.header__calltoaction1 > button {
+  padding: 15px 15px 15px 15px;
+  margin: 0px 55px 0px 55px;
+  border-radius: 2em;
+  border: 0;
+  background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  box-shadow: 5px 5px 20px -15px;
+  color: white;
+}
+
+.restaurant__container--img img {
+  width: 100%;
+  height: auto;
 }
 
 /*# sourceMappingURL=style.css.map */

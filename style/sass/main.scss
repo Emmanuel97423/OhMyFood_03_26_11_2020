@@ -2,20 +2,26 @@
 @import './utils/variables';
 @import './base/typography';
 
-body {
-	
+
+body h1 {
+	font-size: 27px;
+}
+
+.bloc-page {	
 	display: grid;
 	grid-template-columns: 375px;
 	grid-template-rows: auto;
 	text-align: center;
+	align-items: center;
 	background-color:#eaeaea;
-
+	
+	
 }
 .header {
 	
 	&__logo {
 		width: 100%;
-		padding:10px 10px 10px 10px;
+		padding: 20px 10px 10px 10px;
 		background-color: $white;
 		box-shadow: 0 0 20px -10px  $dark;		
 	}
@@ -33,8 +39,39 @@ body {
 		&--text{
 			color:$dark-grey;
 			font-weight: bolder;
+		}		
+	}
+	&__calltoaction1{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding:20px;
+		background-color:#f6f6f6;
+		&>p, h1 {
+			margin-bottom:20px;
 		}
+		&>button {
+			padding:15px 15px 15px 15px;
+			margin: 0px 55px 0px 55px;
+			border-radius: 2em;
+			border: 0;
+			background-image:linear-gradient(to bottom right, $color-secondary,$color-primary);
+			box-shadow: 5px 5px 20px -15px;
+			color:white;
+
+			
+		}
+		
 	}
 	
 
+}
+.restaurant {
+	&__container {
+		&--img img{
+			width: 100%;
+			height: auto;
+		}
+		
+	}
 }
