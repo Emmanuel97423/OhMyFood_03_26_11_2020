@@ -44,7 +44,7 @@ body h1 {
 	}
 	&__calltoaction1{
 		padding:20px;
-		background-color:#f6f6f6;
+		background-color:$light-grey;
 		&>p, h1 {
 			margin-bottom:20px;
 		}
@@ -55,7 +55,7 @@ body h1 {
 			border: 0;
 			background-image:linear-gradient(to bottom right, $color-secondary,$color-primary);
 			box-shadow: 5px 5px 20px -15px;
-			color:white;
+			color:$white;
 
 			
 		}
@@ -69,17 +69,47 @@ body h1 {
 	width: 100%;
 	height: auto;
 	padding: 20px;
-	background-color: white;
-	&--title {
-		margin: 20px 50px 20px -80px;
-	}
+	background-color: $white;
 	&__container {
-		@include flex(flex, row, space-between, 20px);
-		display: flex;
+		display:grid;
+		grid-template-columns: 20% 20% auto;
+		justify-items: center;		
+		text-align: center;
+		margin: 20px 0 20px 10px;
+		padding: 20px 0 20px 0;
+		background-color: $light-grey;
+		border-radius:25px;
+		filter: drop-shadow(4px 9px 11px $dark-grey);
+		&--title {
+			margin: 20px 50px 20px -80px;			
+		}
+		&--number {
+			margin-right: 70px;
+			padding: 10px;
+			border-radius: 50%;
+			background-color: $color-primary;
+			color:$white;
+		}
+		&--icon {
+			padding-top: 10px;
+			margin-right: 20px;
+			margin-left: -90px;
+			color: $dark-grey;
+			font-size: 20px;
+			&> i.active {
+				color: $color-primary;
+			}
+		}	
 		&--text {
-			color:$color-secondary;
+			padding-top: 13px;
+			margin-left:-140px;
+			color: $dark;
+			font-weight: bold;
+			}		
 		}
-		}
+	&>.active {
+			background-color: lighten($color-primary, 30%);
+		}		
 }
 .restaurant {
 	&__container {

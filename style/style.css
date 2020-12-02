@@ -68,7 +68,7 @@ body h1 {
   border: 0;
   background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
   box-shadow: 5px 5px 20px -15px;
-  color: white;
+  color: #FFFFFF;
 }
 
 /*FONCTIONNEMENT*/
@@ -76,20 +76,47 @@ body h1 {
   width: 100%;
   height: auto;
   padding: 20px;
-  background-color: white;
-}
-.fonction--title {
-  margin: 20px 50px 20px -80px;
+  background-color: #FFFFFF;
 }
 .fonction__container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 20px;
-  display: flex;
+  display: grid;
+  grid-template-columns: 20% 20% auto;
+  justify-items: center;
+  text-align: center;
+  margin: 20px 0 20px 10px;
+  padding: 20px 0 20px 0;
+  background-color: #f6f6f6;
+  border-radius: 25px;
+  filter: drop-shadow(4px 9px 11px #494848);
+}
+.fonction__container--title {
+  margin: 20px 50px 20px -80px;
+}
+.fonction__container--number {
+  margin-right: 70px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #9356DC;
+  color: #FFFFFF;
+}
+.fonction__container--icon {
+  padding-top: 10px;
+  margin-right: 20px;
+  margin-left: -90px;
+  color: #494848;
+  font-size: 20px;
+}
+.fonction__container--icon > i.active {
+  color: #9356DC;
 }
 .fonction__container--text {
-  color: #FF79DA;
+  padding-top: 13px;
+  margin-left: -140px;
+  color: #000000;
+  font-weight: bold;
+}
+.fonction > .active {
+  background-color: #e4d5f6;
 }
 
 .restaurant__container--img img {
