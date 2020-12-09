@@ -63,11 +63,22 @@ aside {
         &--title{
             grid-column: 1;
             grid-row: 1 / 2;
+            >p {
+                font-size: 15px;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+            }
         }
         &--composition {
             grid-column: 1;
             grid-row: 2/3;
-            font-size: 15px;
+            >p {
+                font-size: 15px;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+            }
         }
         &--tarif {
             grid-column: 2;
