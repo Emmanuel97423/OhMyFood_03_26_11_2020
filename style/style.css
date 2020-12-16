@@ -19,6 +19,7 @@ body h3 {
 
 body h1, h2, p, a {
   font-family: "Roboto", sans-serif;
+  text-decoration: none;
 }
 
 .bloc-page {
@@ -86,7 +87,7 @@ body h1, h2, p, a {
   padding: 20px 0 20px 0;
   background-color: #f6f6f6;
   border-radius: 25px;
-  filter: drop-shadow(4px 9px 11px #494848);
+  filter: drop-shadow(4px 9px 11px rgba(73, 72, 72, 0.3));
 }
 .fonction__container--title {
   margin: 20px 50px 40px -80px;
@@ -96,7 +97,7 @@ body h1, h2, p, a {
   padding: 6px 10px 5px 10px;
   border-radius: 50%;
   background-color: #9356DC;
-  color: #FFFFFF;
+  color: #FFFFFF !important;
 }
 .fonction__container--icon {
   padding: 10px 0 0 0;
@@ -123,6 +124,7 @@ body h1, h2, p, a {
 }
 .restaurant__container {
   padding: 20px;
+  cursor: pointer;
 }
 .restaurant__container--img img {
   width: 100%;
@@ -148,6 +150,7 @@ body h1, h2, p, a {
   background-color: #FFFFFF;
   border-radius: 0 0 20px 20px;
   padding: 20px 10px 20px 10px;
+  color: #000000;
 }
 .restaurant__container--name {
   font-size: 13px;
@@ -157,8 +160,16 @@ body h1, h2, p, a {
   margin-left: 35px;
   font-size: 25px;
 }
-.restaurant__container--hearticon i:hover {
-  background-color: linear-gradient(to bottom right, #FF79DA, #9356DC);
+
+.restaurant__container .far {
+  position: absolute;
+  opacity: 0;
+}
+
+.restaurant__container .fas {
+  position: absolute;
+  background-color: red;
+  opacity: 0;
 }
 
 article > .restaurant__img img {
@@ -166,9 +177,10 @@ article > .restaurant__img img {
   height: 200px;
   margin: 0 0 -13px 0;
   margin: 0 0 -40px 0;
+  object-fit: cover;
 }
 article > button {
-  padding: 10px 50px;
+  padding: 17px 50px;
   margin: 15px 55px 60px 55px;
   border-radius: 2em;
   border: 0;
@@ -197,9 +209,12 @@ aside {
   display: flex;
   flex-direction: column;
   text-align: left;
-  margin-top: 90px;
+  margin-top: 60px;
 }
 
+.bloc {
+  margin-top: 25px;
+}
 .bloc h4 {
   margin: 0px 10px 0px 10px;
   text-transform: uppercase;
@@ -222,14 +237,14 @@ aside {
   padding: 15px 10px 15px 10px;
   background-color: #f6f6f6;
   border-radius: 15px;
-  filter: drop-shadow(4px 9px 11px #494848);
+  filter: drop-shadow(4px 9px 11px rgba(73, 72, 72, 0.3));
 }
 .bloc__menu--title {
   grid-column: 1;
   grid-row: 1/2;
 }
 .bloc__menu--title > p {
-  font-size: 15px;
+  font-size: 17px;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
@@ -274,11 +289,18 @@ aside {
 .footer > li > a, .footer > li i {
   text-decoration: none;
   color: #f6f6f6;
+  margin-right: 10px;
 }
 .footer > img {
   width: 90px;
   margin: 20px 0 20px 15px;
   fill: #724a4a;
+}
+.footer .fa-hands-helping {
+  font-size: 13px;
+}
+.footer .fa-utensils {
+  margin-right: 14px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -55,7 +55,7 @@
 		padding: 20px 0 20px 0;
 		background-color: $light-grey;
 		border-radius:25px;
-		filter: drop-shadow(4px 9px 11px $dark-grey);
+		filter: drop-shadow(4px 9px 11px rgba(73, 72, 72, 0.3));
 		&--title {
 			margin: 20px 50px 40px -80px;			
 		}
@@ -64,7 +64,7 @@
 			padding: 6px 10px 5px 10px;
 			border-radius: 50%;
 			background-color: $color-primary;
-			color:$white;
+			color:$white !important;
 		}
 		&--icon {
 			padding: 10px 0 0 0;
@@ -95,7 +95,7 @@
 	}
 	&__container {
 		padding: 20px;
-		
+		cursor: pointer;
 		&--img img{
 			@include img-size;
 			border-radius: 20px 20px 0 0;
@@ -118,23 +118,29 @@
 			background-color:$white;
 			border-radius: 0 0 20px 20px;
 			padding: 20px 10px 20px 10px;
+			color: $dark;
 			
 		}
-		&--name {
-			
+		&--name {	
 			font-size: 13px;
 		}
-	
 		&--hearticon {
 			cursor: pointer;
 			margin-left:35px;
 			font-size: 25px;
-			i:hover {
-				background-color: linear-gradient(to bottom right, $color-secondary,$color-primary);
-			}
-			
 		}
 		
 		
 	}
+}
+.restaurant__container .far{
+	position: absolute;
+	
+	opacity: 0;
+}
+
+.restaurant__container .fas{
+	position: absolute;
+	background-color:red;
+	opacity: 0;
 }

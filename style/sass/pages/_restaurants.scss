@@ -2,10 +2,11 @@ article {
     &>.restaurant__img img{
         @include img-size;
         margin: 0 0 -40px 0;
+        object-fit: cover;
     }
     &> button {
        
-			padding: 10px 50px;
+			padding: 17px 50px;
 			margin: 15px 55px 60px 55px;
 			border-radius: 2em;
 			border: 0;
@@ -33,9 +34,10 @@ aside {
     display: flex;
     flex-direction: column;   
     text-align: left;
-    margin-top:90px ;
+    margin-top:60px ;
 }
 .bloc {
+    margin-top: 25px;
     h4 {
         
         margin: 0px 10px 0px 10px;
@@ -59,12 +61,12 @@ aside {
 		padding: 15px 10px 15px 10px;
 		background-color: $light-grey;
 		border-radius:15px;
-        filter: drop-shadow(4px 9px 11px $dark-grey);
+        filter: drop-shadow(4px 9px 11px  rgba(73, 72, 72, 0.3));
         &--title{
             grid-column: 1;
             grid-row: 1 / 2;
             >p {
-                font-size: 15px;
+                font-size: 17px;
                 text-overflow: ellipsis;
                 overflow: hidden;
                 white-space: nowrap;

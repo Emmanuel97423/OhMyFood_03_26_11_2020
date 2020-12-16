@@ -6,26 +6,30 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="../style/style.css">
     
-    <title>Oh My Food - Le delice des sens</title>
+    <title>Oh My Food - Le délice des sens</title>
 </head>
 <body>
-    <div class="restaurant--header">
-        <img src="../img/ohmyfood@2x.svg" alt="" class="logo--medium__black">
+    <div class="bloc-page">
+<!--HEADER-->
+<header class="header">
+    <div class="header__logo">
+        <img src="../img/ohmyfood@2x.svg" alt="logo-ohmyfood">
+    </div>
+</header>
 
 
- <!--MENU-->     
-   
-        <restaurant--menu>
-            <div class="restaurant--menu__title">
-                <img src="../img/stil-u2Lp8tXIcjw-unsplash.jpg">
-                <div class="restaurant--name__menu"><h3>Le delice des sens</h3></div>
+ <!--MENU-->       
+        <article>
+            <div class="restaurant__img"><img src="../img/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"></div>
+            <div class="restaurant__menu--title">    
+                <div class="restaurant--name__menu"><h3>Le délice des sens</h3></div>
                 <div class="icon--heart"><i class="far fa-heart"></i></div>
             </div>
-
 <!--ENTREES--> 
-
-            <div class="menu">
+        <aside>
+            <div class="bloc">
                 <div><h4>Entrée</h4></div>
+                <span class="underline"></span>
                 <div class="bloc__menu">
                     <div class="bloc__menu--title bold"><p>Tartare de thon</p></div>
                     <div class="bloc__menu--composition grey"><p>Assaisonné au yuzu</p></div>
@@ -39,25 +43,24 @@
                     <div class="bloc__menu--check"><i class="fas fa-check"></i></div>
                 </div>
                 <div class="bloc__menu">
-                    <div class="bloc__menu--title bold"><p>Velouté de cèpes </p></div>
+                    <div class="bloc__menu--title bold"><p>Velouté de cèpes</p></div>
                     <div class="bloc__menu--composition grey"><p>Aux truffes</p></div>
                     <div class="bloc__menu--tarif bold"><p>20€</p></div>
                     <div class="bloc__menu--check"><i class="fas fa-check"></i></div>
                 </div>
-            </div>
-
- <!--PLATS-->            
-
-            <div class="menu">
+            </div> 
+            
+            <div class="bloc">
                 <div><h4>Plat</h4></div>
+                <span class="underline"></span>
                 <div class="bloc__menu">
-                    <div class="bloc__menu--title bold"><p>Poulet rôti aux herbes de Provence </p></div>
+                    <div class="bloc__menu--title bold"><p>Poulet rôti aux herbes de Provence</p></div>
                     <div class="bloc__menu--composition grey"><p>Et sa crème de truffe</p></div>
                     <div class="bloc__menu--tarif bold"><p>40€</p></div>
                     <div class="bloc__menu--check"><i class="fas fa-check"></i></div>
                 </div>
                 <div class="bloc__menu">
-                    <div class="bloc__menu--title bold"><p>Langouste rôtie </p></div>
+                    <div class="bloc__menu--title bold"><p>Langouste rôtie</p></div>
                     <div class="bloc__menu--composition grey"><p>Et ses légumes de saison</p></div>
                     <div class="bloc__menu--tarif bold"><p>35€</p></div>
                     <div class="bloc__menu--check"><i class="fas fa-check"></i></div>
@@ -69,11 +72,9 @@
                     <div class="bloc__menu--check"><i class="fas fa-check"></i></div>
                 </div>
             </div>
-
-<!--DESSERT-->
-
-            <div class="menu">
+            <div class="bloc">
                 <div><h4>Dessert</h4></div>
+                <span class="underline"></span>
                 <div class="bloc__menu">
                     <div class="bloc__menu--title bold"><p>Farandole de desserts</p></div>
                     <div class="bloc__menu--composition grey"><p>Du chef</p></div>
@@ -81,30 +82,32 @@
                     <div class="bloc__menu--check"><i class="fas fa-check"></i></div>
                 </div>
                 <div class="bloc__menu">
-                    <div class="bloc__menu--title bold"><p>Crème brulée </p></div>
+                    <div class="bloc__menu--title bold"><p>Crème brulée</p></div>
                     <div class="bloc__menu--composition grey"><p>Revisitée</p></div>
                     <div class="bloc__menu--tarif bold"><p>22€</p></div>
                     <div class="bloc__menu--check"><i class="fas fa-check"></i></div>
                 </div>
                 <div class="bloc__menu">
-                    <div class="bloc__menu--title bold"><p>Tiramisu </p></div>
+                    <div class="bloc__menu--title bold"><p>Tiramisu</p></div>
                     <div class="bloc__menu--composition grey"><p>À la noisette</p></div>
                     <div class="bloc__menu--tarif bold"><p>23€</p></div>
                     <div class="bloc__menu--check"><i class="fas fa-check"></i></div>
                 </div>
             </div>    
-        </restaurant--menu>
-        <button class="btn--order">Commander</button>
-    </div>
-
-<!--FOOTER-->    
+        </aside>
+          <button class="btn--order">Commander</button>
+        </article>
+        
+    
+    <!--FOOTER-->    
 
     <div class="footer">
-        <img src="../img/ohmyfood@2x.svg" alt="logo-ohmyfood" class="logo--footer__white">
+        <img src="../img/ohmyfood-white.png" alt="logo-ohmyfood" class="logo__footer white">
         <li class="footer--link"><i class="fas fa-utensils"></i><a href="#">proposer un restaurant</a></li>
         <li class="footer--link"><i class="fas fa-hands-helping"></i><a href="#">Devenir partenaire</a></li>
         <li class="footer--link"><a href="#">Mentions légales</a></li>
         <li class="footer--link"><a href="#">contact</a></li>
     </div>
+</div>
 </body>
 </html>
