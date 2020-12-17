@@ -22,6 +22,26 @@ body h1, h2, p, a {
   text-decoration: none;
 }
 
+.btn__home--gradient {
+  padding: 15px 15px 15px 15px;
+  margin: 0px 55px 0px 55px;
+  border-radius: 2em;
+  border: 0;
+  background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  box-shadow: 5px 5px 20px -10px #494848;
+  color: #FFFFFF;
+}
+
+.btn__order--gradient {
+  padding: 17px 50px;
+  margin: 15px 55px 60px 55px;
+  border-radius: 2em;
+  border: 0;
+  background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  box-shadow: 5px 5px 20px -10px #494848;
+  color: #FFFFFF;
+}
+
 .bloc-page {
   display: grid;
   grid-template-columns: 100%;
@@ -60,15 +80,6 @@ body h1, h2, p, a {
 }
 .header__calltoaction1 > p, .header__calltoaction1 h1 {
   margin-bottom: 20px;
-}
-.header__calltoaction1 > button {
-  padding: 15px 15px 15px 15px;
-  margin: 0px 55px 0px 55px;
-  border-radius: 2em;
-  border: 0;
-  background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
-  box-shadow: 5px 5px 20px -10px #494848;
-  color: #FFFFFF;
 }
 
 /*FONCTIONNEMENT*/
@@ -179,15 +190,6 @@ article > .restaurant__img img {
   margin: 0 0 -40px 0;
   object-fit: cover;
 }
-article > button {
-  padding: 17px 50px;
-  margin: 15px 55px 60px 55px;
-  border-radius: 2em;
-  border: 0;
-  background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
-  box-shadow: 5px 5px 20px -10px #494848;
-  color: #FFFFFF;
-}
 
 .bloc-page {
   background-color: #eaeaea;
@@ -274,6 +276,39 @@ aside {
   font-weight: bold;
 }
 
+.bloc__menu {
+  position: relative;
+  animation-delay: 0.3s;
+  animation-direction: normal;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-name: apparitionPlats;
+  animation-timing-function: cubic-bezier(0.01, 0.06, 0.56, 0.99);
+  opacity: 0;
+  animation-fill-mode: both;
+}
+.bloc__menu--1 {
+  animation-delay: 0.15s;
+}
+.bloc__menu--2 {
+  animation-delay: 0.3s;
+}
+.bloc__menu--3 {
+  animation-delay: 0.45s;
+}
+
+@keyframes apparitionPlats {
+  0% {
+    transform: translateY(10px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 /*footer*/
 .footer {
   display: grid;
