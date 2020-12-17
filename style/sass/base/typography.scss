@@ -1,0 +1,15 @@
+/*Définition police d'écriture*/
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+body h1 {
+	font-size: 27px;
+}
+body h3{
+    font-family: 'Shrikhand', cursive;
+    color: $dark;
+}
+body h1, h2, p ,a {
+    
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    
+}
