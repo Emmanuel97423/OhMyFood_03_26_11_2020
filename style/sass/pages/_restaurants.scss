@@ -106,7 +106,7 @@ aside {
     animation-timing-function: cubic-bezier(.01,.06,.56,.99);
     opacity: 0;
     animation-fill-mode: both;
-    @for $i from 1 through 3 {
+    @for $i from 1 through 4 {
         &--#{$i} {
             animation-delay: $animationDelay * ($i/2);
         }
