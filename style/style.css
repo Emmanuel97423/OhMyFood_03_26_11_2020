@@ -133,6 +133,9 @@ body h1, h2, p, a {
 .restaurant > h1 {
   margin: 50px 100px 30px -80px;
 }
+.restaurant a {
+  color: black;
+}
 .restaurant__container {
   padding: 20px;
   cursor: pointer;
@@ -167,20 +170,24 @@ body h1, h2, p, a {
   font-size: 13px;
 }
 .restaurant__container--hearticon {
-  cursor: pointer;
+  /*cursor: pointer;
+  margin-left:35px;
+  font-size: 25px;
+  & i {
+  	color: lighten($dark-grey, 40%);
+  }*/
+}
+.restaurant__container--hearticon > .fas, .restaurant__container--hearticon .far {
   margin-left: 35px;
   font-size: 25px;
+  color: #a2a1a1;
 }
-
-.restaurant__container .far {
+.restaurant__container--hearticon > .fas:hover {
   position: absolute;
-  opacity: 0;
-}
-
-.restaurant__container .fas {
-  position: absolute;
-  background-color: red;
-  opacity: 0;
+  color: purple;
+  display: block;
+  margin-left: 35px;
+  font-size: 25px;
 }
 
 article > .restaurant__img img {

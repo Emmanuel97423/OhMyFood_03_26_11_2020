@@ -85,6 +85,9 @@
 	&>h1 {
 		margin: 50px 100px 30px -80px;
 	}
+	& a {
+		color:black;
+	}
 	&__container {
 		padding: 20px;
 		cursor: pointer;
@@ -117,22 +120,34 @@
 			font-size: 13px;
 		}
 		&--hearticon {
-			cursor: pointer;
+			& > .fas, .far {
+				margin-left:35px;
+				font-size: 25px;
+				color: lighten($dark-grey, 35%);
+			}
+			& > .fas:hover {
+				
+				position: absolute;
+				color: purple;
+				display: block;
+				
+		
+				margin-left:35px;
+				font-size: 25px;
+			}
+			
+			
+
+
+			/*cursor: pointer;
 			margin-left:35px;
 			font-size: 25px;
+			& i {
+				color: lighten($dark-grey, 40%);
+			}*/
 		}
 		
 		
 	}
 }
-.restaurant__container .far{
-	position: absolute;
-	
-	opacity: 0;
-}
 
-.restaurant__container .fas{
-	position: absolute;
-	background-color:red;
-	opacity: 0;
-}
