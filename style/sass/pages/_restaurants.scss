@@ -77,15 +77,7 @@ aside {
             grid-row: 2 / 3;
             text-align: right;
         }
-        &--check {
-
-            i{        
-                opacity: 0;
-                i:hover{
-                    opacity: 0;
-                }
-            }
-        }     
+       
     }
     .bold {
         font-weight: bold;
@@ -111,19 +103,63 @@ aside {
             animation-delay: $animationDelay * ($i/2);
         }
     }
-
+ 
+  
 }
+.btn__check{
+    right:0;
+    display: block;
+    position:absolute;
+    background: $color-newbtn;
+    width: 20%;
+    height: 100%;
+    border-radius:0px 15px 15px 0;
+    border: none;
+  
+}
+.bloc__menu {
+    @for $i from 1 through 4 {
+        &--#{$i}{
+            transition: padding 0.5s;
+            &  button {
+                width: 0%;
+                transition : width 0.5s ease-in-out;
+                overflow: hidden;
+            }
+            & i {
+                color: white;
+                font-size: 25px;
+                transition: transform 0.5s ease-in-out;
+                opacity: 1;
+                
+                
+            } 
+
+        }
+        &--#{$i}:hover{
+            padding-right:100px;
+            &  button {
+                background-color:$color-newbtn;
+                width: 20%;
+            }
+            & i {
+                
+                transform: rotate(360deg);
+            }
+       }
+    }
+  
+}
+
+
 
 @keyframes apparitionPlats {
     0% {
-        transform:translateY(10px);
-        
+        transform:translateY(10px);  
     }
-
     50% {
         opacity: 1;
     }
-
     100% { 
         transform: translateY(0);
         opacity: 1;

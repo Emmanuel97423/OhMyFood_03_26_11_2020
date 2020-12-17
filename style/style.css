@@ -266,12 +266,6 @@ aside {
   grid-row: 2/3;
   text-align: right;
 }
-.bloc__menu--check i {
-  opacity: 0;
-}
-.bloc__menu--check i i:hover {
-  opacity: 0;
-}
 .bloc .bold {
   font-weight: bold;
 }
@@ -298,6 +292,114 @@ aside {
 }
 .bloc__menu--4 {
   animation-delay: 0.6s;
+}
+
+.btn__check {
+  right: 0;
+  display: block;
+  position: absolute;
+  background: #99e2d0;
+  width: 20%;
+  height: 100%;
+  border-radius: 0px 15px 15px 0;
+  border: none;
+}
+
+.bloc__menu--1 {
+  transition: padding 0.5s;
+}
+.bloc__menu--1 button {
+  width: 0%;
+  transition: width 0.5s ease-in-out;
+  overflow: hidden;
+}
+.bloc__menu--1 i {
+  color: white;
+  font-size: 25px;
+  transition: transform 0.5s ease-in-out;
+  opacity: 1;
+}
+.bloc__menu--1:hover {
+  padding-right: 100px;
+}
+.bloc__menu--1:hover button {
+  background-color: #99e2d0;
+  width: 20%;
+}
+.bloc__menu--1:hover i {
+  transform: rotate(360deg);
+}
+.bloc__menu--2 {
+  transition: padding 0.5s;
+}
+.bloc__menu--2 button {
+  width: 0%;
+  transition: width 0.5s ease-in-out;
+  overflow: hidden;
+}
+.bloc__menu--2 i {
+  color: white;
+  font-size: 25px;
+  transition: transform 0.5s ease-in-out;
+  opacity: 1;
+}
+.bloc__menu--2:hover {
+  padding-right: 100px;
+}
+.bloc__menu--2:hover button {
+  background-color: #99e2d0;
+  width: 20%;
+}
+.bloc__menu--2:hover i {
+  transform: rotate(360deg);
+}
+.bloc__menu--3 {
+  transition: padding 0.5s;
+}
+.bloc__menu--3 button {
+  width: 0%;
+  transition: width 0.5s ease-in-out;
+  overflow: hidden;
+}
+.bloc__menu--3 i {
+  color: white;
+  font-size: 25px;
+  transition: transform 0.5s ease-in-out;
+  opacity: 1;
+}
+.bloc__menu--3:hover {
+  padding-right: 100px;
+}
+.bloc__menu--3:hover button {
+  background-color: #99e2d0;
+  width: 20%;
+}
+.bloc__menu--3:hover i {
+  transform: rotate(360deg);
+}
+.bloc__menu--4 {
+  transition: padding 0.5s;
+}
+.bloc__menu--4 button {
+  width: 0%;
+  transition: width 0.5s ease-in-out;
+  overflow: hidden;
+}
+.bloc__menu--4 i {
+  color: white;
+  font-size: 25px;
+  transition: transform 0.5s ease-in-out;
+  opacity: 1;
+}
+.bloc__menu--4:hover {
+  padding-right: 100px;
+}
+.bloc__menu--4:hover button {
+  background-color: #99e2d0;
+  width: 20%;
+}
+.bloc__menu--4:hover i {
+  transform: rotate(360deg);
 }
 
 @keyframes apparitionPlats {
