@@ -6,6 +6,46 @@ article {
     }
   
 }
+//Animation coeur
+.icon--heart {
+    & > .far, .fas {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        right:130px;
+        top:5px;
+        font-size: 25px;
+        background: lighten($dark-grey, 35%);
+        z-index: 1;
+        position: relative;
+        }
+    & > .fas::before {
+        content:'\f004';
+        position: absolute;
+        top: 0px;
+        left: 100px;
+        width: 100%;
+        height: 100%;
+        transition: all 0.5s;
+        z-index: 1;
+        opacity: 0;
+        }
+    & > .far::before {
+        content:'\f004';
+        position: absolute;
+        top: 0px;
+        left: 100px;
+        width: 100%;
+        height: 100%;
+        color: $dark-grey;		
+        }
+    & > .fas:hover::before {
+        top:0;
+        opacity: 1;	
+        color: purple;
+    }	
+}
+
 .bloc-page {		
 	background-color: $background-color-light-grey;	
 }
