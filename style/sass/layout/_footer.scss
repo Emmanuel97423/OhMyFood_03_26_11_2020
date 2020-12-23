@@ -5,7 +5,7 @@
 	text-align: left;
 	background-color: $dark-grey;
 	margin: 10;
-	&> li {	
+	& li {	
 		list-style-type: none;
 		&> a,i {
 			text-decoration: none;
@@ -14,7 +14,7 @@
 		}
 		margin:2px 10px 5px 20px;	
 	}	
-	>img {
+	img {
 		width: 90px;
 		margin: 20px 0 20px 15px;
 		fill:rgb(114, 74, 74);

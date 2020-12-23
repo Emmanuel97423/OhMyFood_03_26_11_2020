@@ -146,7 +146,7 @@ aside {
  
   
 }
-.btn__check{
+.btn__check {
     right:0;
     display: block;
     position:absolute;
@@ -178,19 +178,35 @@ aside {
         }
         &--#{$i}:hover{
             padding-right:100px;
-            &  button {
-                background-color:$color-newbtn;
-                width: 20%;
+           
+            &  button { 
+                animation-duration: 1s;
+                animation-name: hoverPadding;
+                animation-fill-mode: both;
+               
+                
+                
+                
             }
             & i {
                 
                 transform: rotate(360deg);
+                
             }
        }
     }
   
 }
 
+@keyframes hoverPadding {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 20%;
+        animation-play-state: paused;
+    }
+}
 
 
 @keyframes apparitionPlats {
@@ -205,7 +221,4 @@ aside {
         opacity: 1;
     }
 }
-
-
-
 
