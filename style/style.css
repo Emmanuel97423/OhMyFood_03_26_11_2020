@@ -78,7 +78,7 @@ body h1, h2, p, a {
   padding: 20px;
   background-color: #f6f6f6;
 }
-.header__calltoaction1 > p, .header__calltoaction1 h1 {
+.header__calltoaction1 > p, .header__calltoaction1 h2 {
   margin-bottom: 20px;
 }
 
@@ -103,6 +103,11 @@ body h1, h2, p, a {
 .fonction__container--title {
   margin: 20px 50px 40px -80px;
 }
+@media only screen and (max-width: 320px) {
+  .fonction__container--title {
+    margin: 20px 50px 40px -45px;
+  }
+}
 .fonction__container--number {
   margin: 10px 70px 10px 5px;
   padding: 6px 10px 5px 10px;
@@ -119,19 +124,34 @@ body h1, h2, p, a {
 .fonction__container--icon > i.active {
   color: #9356DC;
 }
+@media only screen and (max-width: 320px) {
+  .fonction__container--icon {
+    margin: 0 5px 0 -90px;
+  }
+}
 .fonction__container--text {
   padding: 13px 0 0 0;
   margin: 0 0 0 -140px;
   color: #000000;
   font-weight: bold;
 }
+@media only screen and (max-width: 320px) {
+  .fonction__container--text {
+    margin: 0 0 0 -90px;
+  }
+}
 .fonction > .active {
   background-color: #e4d5f6;
 }
 
 /*RESTAURANTS*/
-.restaurant > h1 {
-  margin: 50px 100px 30px -80px;
+.restaurant > h2 {
+  margin: 30px 100px 20px -80px;
+}
+@media only screen and (max-width: 320px) {
+  .restaurant > h2 {
+    margin: 30px 100px 20px -50px;
+  }
 }
 .restaurant a {
   color: black;
@@ -140,9 +160,12 @@ body h1, h2, p, a {
   padding: 20px;
   cursor: pointer;
 }
+.restaurant__container--img {
+  display: flex;
+}
 .restaurant__container--img img {
+  position: relative;
   width: 100%;
-  height: 200px;
   margin: 0 0 -13px 0;
   border-radius: 20px 20px 0 0;
   object-fit: cover;
@@ -155,6 +178,7 @@ body h1, h2, p, a {
   color: #1b6150;
   border: 0;
   font-weight: bold;
+  align-self: end;
 }
 .restaurant__container--text {
   display: grid;
@@ -205,9 +229,12 @@ body h1, h2, p, a {
   color: purple;
 }
 
+.button {
+  background-color: red;
+}
+
 article > .restaurant__img img {
   width: 100%;
-  height: 200px;
   margin: 0 0 -13px 0;
   margin: 0 0 -40px 0;
   object-fit: cover;
@@ -380,11 +407,13 @@ aside {
 }
 .bloc__menu--1:hover {
   padding-right: 100px;
+  transition-timing-function: step-end;
 }
 .bloc__menu--1:hover button {
-  animation-duration: 1s;
+  /*animation-duration: 1s;
   animation-name: hoverPadding;
-  animation-fill-mode: both;
+  animation-fill-mode: both;*/
+  width: 20%;
 }
 .bloc__menu--1:hover i {
   transform: rotate(360deg);
@@ -405,11 +434,13 @@ aside {
 }
 .bloc__menu--2:hover {
   padding-right: 100px;
+  transition-timing-function: step-end;
 }
 .bloc__menu--2:hover button {
-  animation-duration: 1s;
+  /*animation-duration: 1s;
   animation-name: hoverPadding;
-  animation-fill-mode: both;
+  animation-fill-mode: both;*/
+  width: 20%;
 }
 .bloc__menu--2:hover i {
   transform: rotate(360deg);
@@ -430,11 +461,13 @@ aside {
 }
 .bloc__menu--3:hover {
   padding-right: 100px;
+  transition-timing-function: step-end;
 }
 .bloc__menu--3:hover button {
-  animation-duration: 1s;
+  /*animation-duration: 1s;
   animation-name: hoverPadding;
-  animation-fill-mode: both;
+  animation-fill-mode: both;*/
+  width: 20%;
 }
 .bloc__menu--3:hover i {
   transform: rotate(360deg);
@@ -455,25 +488,27 @@ aside {
 }
 .bloc__menu--4:hover {
   padding-right: 100px;
+  transition-timing-function: step-end;
 }
 .bloc__menu--4:hover button {
-  animation-duration: 1s;
+  /*animation-duration: 1s;
   animation-name: hoverPadding;
-  animation-fill-mode: both;
+  animation-fill-mode: both;*/
+  width: 20%;
 }
 .bloc__menu--4:hover i {
   transform: rotate(360deg);
 }
 
-@keyframes hoverPadding {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 20%;
-    animation-play-state: paused;
-  }
-}
+/*@keyframes hoverPadding {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 20%;
+
+    }
+}*/
 @keyframes apparitionPlats {
   0% {
     transform: translateY(10px);

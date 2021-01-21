@@ -164,6 +164,7 @@ aside {
             &  button {
                 width: 0%;
                 transition : width 0.5s ease-in-out;
+                
                 overflow: hidden;
             }
             & i {
@@ -176,37 +177,38 @@ aside {
             } 
 
         }
-        &--#{$i}:hover{
+        &--#{$i}:hover {
             padding-right:100px;
-           
+            transition-timing-function: step-end;
             &  button { 
-                animation-duration: 1s;
+                /*animation-duration: 1s;
                 animation-name: hoverPadding;
-                animation-fill-mode: both;
-               
-                
-                
-                
+                animation-fill-mode: both;*/
+                width: 20%;
+        
             }
             & i {
                 
                 transform: rotate(360deg);
                 
             }
+            
        }
     }
   
 }
 
-@keyframes hoverPadding {
+
+
+/*@keyframes hoverPadding {
     0% {
         width: 0;
     }
     100% {
         width: 20%;
-        animation-play-state: paused;
+       
     }
-}
+}*/
 
 
 @keyframes apparitionPlats {

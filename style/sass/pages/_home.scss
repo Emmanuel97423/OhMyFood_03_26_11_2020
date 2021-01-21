@@ -24,7 +24,7 @@
 	&__calltoaction1{
 		padding:20px;
 		background-color:$light-grey;
-		&>p, h1 {
+		&>p, h2 {
 			margin-bottom:20px;
 		}
 		
@@ -49,7 +49,10 @@
 		border-radius:25px;
 		filter: drop-shadow(4px 9px 11px rgba(73, 72, 72, 0.3));
 		&--title {
-			margin: 20px 50px 40px -80px;			
+			margin: 20px 50px 40px -80px;
+			@include responsive(iphone5) {
+				margin: 20px 50px 40px -45px;
+			}		
 		}
 		&--number {
 			margin: 10px 70px 10px 5px;
@@ -66,12 +69,18 @@
 			&> i.active {
 				color: $color-primary;
 			}
+			@include responsive(iphone5) {
+				margin:0 5px 0 -90px;
+			}
 		}	
 		&--text {
 			padding: 13px 0 0 0;
 			margin:0 0 0 -140px;
 			color: $dark;
 			font-weight: bold;
+			@include responsive(iphone5) {
+				margin: 0 0 0 -90px;
+			}
 			}		
 		}
 	&>.active {
@@ -82,9 +91,11 @@
 /*RESTAURANTS*/
 
 .restaurant {
-	&>h1 {
-		margin: 50px 100px 30px -80px;
-		
+	&>h2 {
+		margin: 30px 100px 20px -80px;
+		@include responsive(iphone5) {
+			margin: 30px 100px 20px -50px;
+		}
 	}
 	& a {
 		color:black;
@@ -92,10 +103,19 @@
 	&__container {
 		padding: 20px;
 		cursor: pointer;
-		&--img img{
-			@include img-size;
-			border-radius: 20px 20px 0 0;
-			object-fit: cover;
+		&--img {
+			display:flex;
+			
+			
+				img {
+					position: relative;
+					@include img-size;
+					border-radius: 20px 20px 0 0;
+					object-fit: cover;
+					
+				}
+			
+			
 		}
 		&--btnnew {
 			position: absolute;
@@ -104,7 +124,9 @@
 			background-color: $color-newbtn;
 			color: $color-newbtn-text;
 			border:0;
-			font-weight:bold,
+			font-weight:bold;
+			align-self: end ;
+			
 		}
 		&--text {
 			display: grid;
@@ -156,10 +178,8 @@
 				opacity: 1;	
 				color: purple;
 			}	
-			
-			
-
-
+		
+		
 		
 		}
 		
@@ -167,3 +187,6 @@
 	}
 }
 
+.button {
+	background-color:red;
+}

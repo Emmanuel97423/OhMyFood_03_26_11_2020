@@ -29,8 +29,22 @@
 }
 @mixin img-size {
 		width: 100%;
-		height: 200px;
+		
 		margin: 0 0 -13px 0;
 		
 }
-
+//Media mediaQueries
+@mixin responsive ($breakpoint) {
+    @if $breakpoint == iphone5 {
+        @media only screen and (max-width:320px) { @content };
+    }
+    @if $breakpoint == ipad {
+        @media only screen and (max-width:768px) { @content };
+    }
+    @if $breakpoint == iphone678plus {
+        @media only screen and (max-width:768px) { @content };
+    }
+    @if $breakpoint == desktop {
+        @media only screen and (min-width:1800px) { @content };
+    }
+}
