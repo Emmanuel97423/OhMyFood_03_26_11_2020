@@ -100,14 +100,6 @@ body h1, h2, p, a {
   border-radius: 25px;
   filter: drop-shadow(4px 9px 11px rgba(73, 72, 72, 0.3));
 }
-.fonction__container--title {
-  margin: 20px 50px 40px -80px;
-}
-@media only screen and (max-width: 320px) {
-  .fonction__container--title {
-    margin: 20px 50px 40px -45px;
-  }
-}
 .fonction__container--number {
   margin: 10px 70px 10px 5px;
   padding: 6px 10px 5px 10px;
@@ -547,6 +539,38 @@ aside {
 }
 .footer .fa-utensils {
   margin-right: 14px;
+}
+
+#spinner {
+  position: fixed;
+  z-index: 9999999;
+  width: 100%;
+  height: 100%;
+  background-color: #FF79DA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: 0.5s normal 3s forwards fade;
+}
+
+.loading-spinner {
+  width: 5rem;
+  height: 5rem;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-top: 3px solid white;
+  border-radius: 50%;
+  animation: 1s spinner infinite ease-in-out;
+}
+
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes fade {
+  to {
+    opacity: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
