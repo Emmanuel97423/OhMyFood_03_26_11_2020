@@ -29,7 +29,6 @@
 }
 @mixin img-size {
 		width: 100%;
-		
 		margin: 0 0 -13px 0;
 		
 }
@@ -45,6 +44,6 @@
         @media only screen and (max-width:768px) { @content };
     }
     @if $breakpoint == desktop {
-        @media only screen and (min-width:1800px) { @content };
+        @media only screen and (min-width:1024px) { @content };
     }
 }

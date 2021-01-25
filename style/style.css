@@ -30,6 +30,7 @@ body h1, h2, p, a {
   background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
   box-shadow: 5px 5px 20px -10px #494848;
   color: #FFFFFF;
+  transition: 0.5s;
 }
 
 .btn__order--gradient {
@@ -40,6 +41,7 @@ body h1, h2, p, a {
   background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
   box-shadow: 5px 5px 20px -10px #494848;
   color: #FFFFFF;
+  transition: 0.5s;
 }
 
 .btn__home--gradient:hover, .btn__order--gradient:hover {
@@ -113,6 +115,11 @@ body h1, h2, p, a {
 }
 
 /*RESTAURANTS*/
+.restaurant {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
 .restaurant > h2 {
   margin: 30px 100px 20px -80px;
 }
@@ -171,6 +178,12 @@ body h1, h2, p, a {
   background: #a2a1a1;
   z-index: 1;
   position: relative;
+}
+@media only screen and (min-width: 1024px) {
+  .restaurant__container--hearticon > .far,
+.restaurant__container--hearticon .fas {
+    right: -70px;
+  }
 }
 .restaurant__container--hearticon > .fas::before {
   content: "";

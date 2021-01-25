@@ -7,6 +7,7 @@
     background-image:linear-gradient(to bottom right, $color-secondary,$color-primary);
     box-shadow: 5px 5px 20px -10px rgba(73, 72, 72,);
     color:$white;	
+    transition: 0.5s
 }		
 
 .btn__order--gradient {  
@@ -16,7 +17,8 @@
         border: 0;
         background-image:linear-gradient(to bottom right, $color-secondary,$color-primary);
         box-shadow: 5px 5px 20px -10px rgba(73, 72, 72,);
-        color:$white;	
+        color:$white;
+        transition: 0.5s	
 }
 .btn__home--gradient:hover, .btn__order--gradient:hover {
     box-shadow: 5px 5px 11px 0 rgba(73, 72, 72,);

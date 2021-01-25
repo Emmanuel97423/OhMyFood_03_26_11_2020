@@ -59,6 +59,9 @@
 /*RESTAURANTS*/
 
 .restaurant {
+	display: flex;
+	flex-direction: column;
+	justify-content:space-around;
   & > h2 {
     margin: 30px 100px 20px -80px;
     @include responsive(iphone5) {
@@ -70,15 +73,18 @@
   }
   &__container {
     padding: 20px;
-    cursor: pointer;
+	cursor: pointer;
+
     &--img {
       display: flex;
-
+		
       img {
         position: relative;
         @include img-size;
         border-radius: 20px 20px 0 0;
-        object-fit: cover;
+		object-fit: cover;
+	
+
       }
     }
     &--btnnew {
@@ -114,7 +120,10 @@
         font-size: 25px;
         background: lighten($dark-grey, 35%);
         z-index: 1;
-        position: relative;
+		position: relative;
+		@include responsive(desktop) {
+			right: -70px;
+		}
       }
       & > .fas::before {
         content: "\f004";
