@@ -542,6 +542,7 @@ aside {
 }
 
 #spinner {
+  visibility: visible;
   position: fixed;
   z-index: 9999999;
   width: 100%;
@@ -570,6 +571,7 @@ aside {
 @keyframes fade {
   to {
     opacity: 0;
+    visibility: hidden;
   }
 }
 

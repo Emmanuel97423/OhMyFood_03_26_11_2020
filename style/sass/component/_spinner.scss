@@ -1,13 +1,14 @@
 #spinner {
-    position: fixed;
-    z-index: 9999999;
+  visibility: visible;
+  position: fixed;
+  z-index: 9999999;
   width: 100%;
   height: 100%;
-  background-color:$color-tertiary;
+  background-color: $color-tertiary;
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: 0.5s normal 3s forwards fade  ;
+  animation: 0.5s normal 3s forwards fade;
 }
 .loading-spinner {
   width: 5rem;
@@ -16,16 +17,16 @@
   border-top: 3px solid white;
   border-radius: 50%;
   animation: 1s spinner infinite ease-in-out;
-
 }
 
 @keyframes spinner {
-    to {
-        transform: rotate(360deg);
-    }
+  to {
+    transform: rotate(360deg);
+  }
 }
 @keyframes fade {
-    to {
-        opacity: 0;
-    }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
 }
