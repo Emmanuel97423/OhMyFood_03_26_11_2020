@@ -1,0 +1,41 @@
+.header {
+  &__logo {
+    width: 100%;
+    padding: 20px 10px 10px 10px;
+    background-color: $white;
+    box-shadow: 0 0 20px -10px $dark;
+    display:flex;
+    justify-content:space-evenly;
+
+
+  }
+   &__location {
+    @include flex(flex, row, center, 20px);
+    align-items: center;
+    text-align: center;
+    background-color: #eaeaea;
+    &--icon {
+      margin-right: 1em;
+      color: $dark-grey;
+    }
+    &--text {
+      color: $dark-grey;
+      font-weight: bolder;
+    }
+  }
+  &__calltoaction1 {
+    padding: 20px;
+    background-color: $light-grey;
+    & > p,
+    h2 {
+      margin-bottom: 20px;
+    }
+  }
+}
+.fa-arrow-left {
+
+	font-size:25px;
+  color: $dark-grey;
+  align-self: flex-end;
+  
+}

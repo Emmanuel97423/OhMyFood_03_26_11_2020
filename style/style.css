@@ -50,44 +50,15 @@ body h1, h2, p, a {
   align-items: center;
 }
 
-/*HEADER*/
-.header__logo {
-  width: 100%;
-  padding: 20px 10px 10px 10px;
-  background-color: #FFFFFF;
-  box-shadow: 0 0 20px -10px #000000;
-}
-.header__location {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin: 20px;
-  align-items: center;
-  text-align: center;
-  background-color: #eaeaea;
-}
-.header__location--icon {
-  margin-right: 1em;
-  color: #494848;
-}
-.header__location--text {
-  color: #494848;
-  font-weight: bolder;
-}
-.header__calltoaction1 {
-  padding: 20px;
-  background-color: #f6f6f6;
-}
-.header__calltoaction1 > p, .header__calltoaction1 h2 {
-  margin-bottom: 20px;
-}
-
 /*FONCTIONNEMENT*/
 .fonction {
   width: 100%;
   height: auto;
   padding: 20px;
   background-color: #FFFFFF;
+  /*& > .active {
+    background-color: lighten($color-primary, 30%);
+  }*/
 }
 .fonction__container {
   display: grid;
@@ -132,7 +103,7 @@ body h1, h2, p, a {
     margin: 0 0 0 -90px;
   }
 }
-.fonction > .active {
+.fonction > .fonction__container:hover {
   background-color: #e4d5f6;
 }
 
@@ -185,7 +156,8 @@ body h1, h2, p, a {
 .restaurant__container--name {
   font-size: 13px;
 }
-.restaurant__container--hearticon > .far, .restaurant__container--hearticon .fas {
+.restaurant__container--hearticon > .far,
+.restaurant__container--hearticon .fas {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -551,7 +523,7 @@ aside {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: 0.5s normal 3s forwards fade;
+  animation: 0.5s normal 1.5s forwards fade;
 }
 
 .loading-spinner {
@@ -573,6 +545,45 @@ aside {
     opacity: 0;
     visibility: hidden;
   }
+}
+.header__logo {
+  width: 100%;
+  padding: 20px 10px 10px 10px;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 20px -10px #000000;
+  display: flex;
+  justify-content: space-evenly;
+}
+.header__location {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 20px;
+  align-items: center;
+  text-align: center;
+  background-color: #eaeaea;
+}
+.header__location--icon {
+  margin-right: 1em;
+  color: #494848;
+}
+.header__location--text {
+  color: #494848;
+  font-weight: bolder;
+}
+.header__calltoaction1 {
+  padding: 20px;
+  background-color: #f6f6f6;
+}
+.header__calltoaction1 > p,
+.header__calltoaction1 h2 {
+  margin-bottom: 20px;
+}
+
+.fa-arrow-left {
+  font-size: 25px;
+  color: #494848;
+  align-self: flex-end;
 }
 
 /*# sourceMappingURL=style.css.map */
