@@ -15,7 +15,7 @@
     background-color: $light-grey;
     border-radius: 25px;
     filter: drop-shadow(4px 9px 11px rgba(73, 72, 72, 0.3));
-
+	transition:0.4s;
     &--number {
       margin: 10px 70px 10px 5px;
       padding: 6px 10px 5px 10px;
